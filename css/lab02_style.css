@@ -1,0 +1,53 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+
+}
+.searchContainer{
+    display: flex;           /* establish flex container */
+    flex-direction: column;  /* make main axis vertical */
+    align-items: center;     /* center items horizontally, in this case */
+    height: 250px;
+}
+.searchBox{
+    width: 400px;
+    padding:5px 40px 35px 40px;
+    border-width: thin;
+    border-color: gainsboro ;
+    border-style:solid;
+}
+.searchBox input{
+ width:80%;
+}
+.textDesc{
+    float:right;
+ padding:5px;
+ width:224px
+}
+.profileCont{
+    width:350px;
+
+    flex-direction: column;
+    display:flex;
+}
+.singularProf:hover{
+    background-color:gainsboro;
+}
+.singularProf{
+    width:max-parent;
+    height:90px;
+    padding:10px;
+    border-color: gainsboro ;
+    border-style:solid;
+    border-width: thin;
+}
+.singularProf img{
+    width:90px;
+    height:90px;
+    float:left;
+}
+.singularProf h5{
+    margin:0;
+}
+.singularProf p{
+    font-size: 12px;
+}
