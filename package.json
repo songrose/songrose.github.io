@@ -1,0 +1,22 @@
+{
+  "name": "songrose.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/lab05script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/songrose/songrose.github.io.git"
+  },
+  "author": "rose",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/songrose/songrose.github.io/issues"
+  },
+  "homepage": "https://github.com/songrose/songrose.github.io#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
