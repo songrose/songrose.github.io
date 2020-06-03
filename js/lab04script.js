@@ -146,8 +146,8 @@ function searchContacts() {
         }
         for (let i = 0; i < userProfilesArray.length; i++){
             if(userProfilesArray[i].name != null ){
-                let nameString = (userProfilesArray[i].name).substring(0, x.length);
-                if(x== nameString){
+                let nameString = (userProfilesArray[i].name);
+                if(nameString.includes(x)){
                     showProfile(userProfilesArray[i].name, userProfilesArray[i].desc, userProfilesArray[i].imageURL);
 
                 }

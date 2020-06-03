@@ -29,6 +29,15 @@ if(localStorage.getItem('userCount') != null ){
     localStorage.setItem('userArray',JSON.stringify(userProfilesArray));
 }
 
+fetch('/getList').then((response)) => {
+    if (response.status !== 200) {
+        console.log('Status Code: ' + response.status);
+        return;
+    };
+};
+
+userProfilesArray = JSON.parse(fs.readFileSync(path.join(__dirname + '/profiles.txt')));
+
 class userProf {
     constructor(name, desc, imageURL) {
       this.userId =  ++userCount;
@@ -147,7 +156,7 @@ function searchContacts() {
         for (let i = 0; i < userProfilesArray.length; i++){
             if(userProfilesArray[i].name != null ){
                 let nameString = (userProfilesArray[i].name).substring(0, x.length);
-                if(x== nameString){
+                if(nameString.includes(x)){
                     showProfile(userProfilesArray[i].name, userProfilesArray[i].desc, userProfilesArray[i].imageURL);
 
                 }
